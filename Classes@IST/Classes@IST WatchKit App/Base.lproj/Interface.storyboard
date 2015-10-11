@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--@IST-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="@IST" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Classes_IST_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="6P0-j2-4oW">
+                            <items>
+                                <dateLabel alignment="left" id="BY9-yJ-jt5">
+                                    <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
+                                    <dateFormatterStyle key="timeStyle" none="YES" short="YES"/>
+                                </dateLabel>
+                                <label width="1" height="26" alignment="center" text="Horario" textAlignment="center" id="QRf-0u-Uj8">
+                                    <color key="textColor" red="0.1509879683" green="0.71726573650000003" blue="0.97739109850000006" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator width="0.59999999999999998" alignment="center" id="QAq-AI-7J4">
+                            <color key="color" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <table alignment="left" id="Bee-AN-lmP">
+                            <items>
+                                <tableRow identifier="TableRowContainer" id="VxU-Vj-8hM" customClass="TableRowContainer" customModule="Classes_IST_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="INX-H7-gph">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="00:00" id="IRg-ok-UTh">
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            </label>
+                                            <label width="0.65000000000000002" alignment="right" verticalAlignment="center" text="First Class" textAlignment="left" numberOfLines="2" id="G6U-c5-pLb">
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="4VW-BV-Hsr" kind="push" id="uil-Gc-qIV"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="classLocal" destination="IRg-ok-UTh" id="jtt-Ty-NGR"/>
+                                        <outlet property="className" destination="G6U-c5-pLb" id="3a0-3l-S2O"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label width="1" alignment="left" hidden="YES" text="Não à aulas a apresentar" textAlignment="center" numberOfLines="2" id="l7h-q8-ToN">
+                            <color key="textColor" red="0.79242576190000003" green="0.79133373200000001" blue="0.81040877529999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <label width="1" height="26" alignment="center" text="Mais" textAlignment="center" id="xxy-RB-Fk8">
+                            <color key="textColor" red="0.1509879683" green="0.71726573650000003" blue="0.97739109850000006" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                        <separator width="0.59999999999999998" alignment="center" id="5ld-yL-6g4">
+                            <color key="color" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <button width="1" alignment="left" title="Sobre" id="w3H-mR-bwO">
+                            <color key="titleColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="thin" pointSize="13"/>
+                            <connections>
+                                <segue destination="6qt-dz-EAU" kind="push" id="cQa-fv-D10"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="tIX-ZX-rMn">
+                            <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </separator>
+                    </items>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="classTableOutlet" destination="Bee-AN-lmP" id="g6i-dQ-GOs"/>
+                        <outlet property="noClassesTag" destination="l7h-q8-ToN" id="5ck-wf-oBO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="425" y="262.5"/>
+        </scene>
+        <!--Sobre-->
+        <scene sceneID="eVx-1w-2ov">
+            <objects>
+                <controller title="Sobre" id="6qt-dz-EAU">
+                    <items>
+                        <imageView width="1" alignment="center" image="smaller_icon" id="qWX-Nx-iPP"/>
+                        <label width="0.94999999999999996" alignment="center" text="Developed for Apple Watch" textAlignment="justified" numberOfLines="3" id="vbe-XZ-EZQ">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="thin" pointSize="14"/>
+                        </label>
+                        <label width="1" alignment="left" text="by Francisco Eiras" textAlignment="center" id="ab3-w2-iMK">
+                            <color key="textColor" red="0.79242576193590863" green="0.79133373197855694" blue="0.8104087752525253" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="light" pointSize="12"/>
+                        </label>
+                        <label width="1" alignment="left" text="Versão 1.0.0.3" textAlignment="center" id="V1v-I0-ic7">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="light" pointSize="10"/>
+                        </label>
+                        <separator width="1" alignment="left" id="fWL-ln-fEG">
+                            <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <label width="0.94999999999999996" alignment="center" text="Handoff™" textAlignment="justified" numberOfLines="3" id="O7Z-4X-07x">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="thin" pointSize="13"/>
+                        </label>
+                        <label width="0.96999999999999997" alignment="center" textAlignment="justified" numberOfLines="10" id="DQ4-sa-TCG">
+                            <string key="text">Ao selecionar uma aula, verifique no seu iPhone que surgiu um símbolo no canto inferior direito. Arrastando-o para cima, será levado para a página da cadeira.</string>
+                            <color key="textColor" red="0.79242576190000003" green="0.79133373200000001" blue="0.81040877529999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="light" pointSize="10"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="673" y="-25"/>
+        </scene>
+        <!--Class-->
+        <scene sceneID="7sP-7A-PE9">
+            <objects>
+                <controller title="Class" id="4VW-BV-Hsr" customClass="FeatureInterfaceController" customModule="Classes_IST_WatchKit_Extension">
+                    <items>
+                        <label width="0.97999999999999998" alignment="center" text="Analise Complexa e Equacoes Diferenciais [T]" textAlignment="left" numberOfLines="4" id="Rid-gc-w4S">
+                            <color key="textColor" red="0.1509879683" green="0.71726573650000003" blue="0.97739109850000006" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="thin" pointSize="16"/>
+                        </label>
+                        <separator width="0.90000000000000002" alignment="left" id="14C-Ux-adA">
+                            <color key="color" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group width="0.97999999999999998" alignment="center" id="8OY-6j-4Wu">
+                            <items>
+                                <label alignment="left" text="12:00" id="IDh-sC-9vn">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="14"/>
+                                </label>
+                                <label alignment="left" verticalAlignment="center" text="-" id="SZW-Jw-hHB">
+                                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label alignment="left" text="GA2" id="7rM-Fw-akH">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator width="0.90000000000000002" alignment="right" id="Tnz-t4-b6b">
+                            <color key="color" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <button width="0.97999999999999998" alignment="center" title="Ver Calendario" id="sPJ-EM-NDV">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </button>
+                    </items>
+                    <menu key="menu" id="ypQ-ap-6Vj">
+                        <items>
+                            <menuItem title="Abrir Pagina" icon="more" id="uL5-Ji-iDQ"/>
+                            <menuItem title="Ver Calendario" icon="info" id="zzp-EN-sX6"/>
+                        </items>
+                    </menu>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="classLocal" destination="7rM-Fw-akH" id="oj1-d2-BiP"/>
+                        <outlet property="className" destination="Rid-gc-w4S" id="amI-M7-808"/>
+                        <outlet property="classTime" destination="IDh-sC-9vn" id="tmB-pR-0a9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="730" y="340.75"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+</document>
