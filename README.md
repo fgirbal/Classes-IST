@@ -1,7 +1,7 @@
 # Classes-IST
 Apple Watch App to display student's classes at Técnico Lisboa
 
-<img src="">
+<img src="1.jpg" alt="Screenshot">
 
 Features:
 <ul>
