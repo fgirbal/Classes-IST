@@ -39,7 +39,7 @@ class InterfaceController: WKInterfaceController {
             classTableOutlet.setHidden(true)
         }
         
-        for (i, className) in enumerate(classValues) {
+        for (i, className) in classValues.enumerate() {
             let row = classTableOutlet.rowControllerAtIndex(i) as! TableRowContainer
             
             row.className.setText(className)

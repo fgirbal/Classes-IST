@@ -300,6 +300,8 @@
 		B20F93E91A818524000D1C01 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Francisco Girbal Eiras";
 				TargetAttributes = {
@@ -671,6 +673,7 @@
 				B20F94121A818524000D1C01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B20F94131A818524000D1C01 /* Build configuration list for PBXNativeTarget "Classes@ISTTests" */ = {
 			isa = XCConfigurationList;
@@ -679,6 +682,7 @@
 				B20F94151A818524000D1C01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B20F94331A818532000D1C01 /* Build configuration list for PBXNativeTarget "Classes@IST WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -687,6 +691,7 @@
 				B20F94351A818532000D1C01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B20F94361A818532000D1C01 /* Build configuration list for PBXNativeTarget "Classes@IST WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -695,6 +700,7 @@
 				B20F94381A818532000D1C01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

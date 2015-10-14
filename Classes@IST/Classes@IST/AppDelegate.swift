@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication,
         continueUserActivity userActivity: NSUserActivity,
-        restorationHandler: ([AnyObject]!) -> Void) -> Bool {
+        restorationHandler: ([AnyObject]?) -> Void) -> Bool {
             if let window = self.window, rvc = window.rootViewController {
                 rvc.childViewControllers.first?.restoreUserActivityState(userActivity)
             }
